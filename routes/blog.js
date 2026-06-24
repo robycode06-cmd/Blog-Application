@@ -38,7 +38,7 @@ blog_router.get('/:id',async (req,res)=>{
     const comments = await COMMENT.find({blog:req.params.id}).populate(
       "createdBy"
     );
-    
+    //hy
     return res.render("blog",{
       user:req.user,
       blog,
